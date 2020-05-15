@@ -50,13 +50,13 @@ public class Reserva extends Financeiro{
 	public void reservas() {		
 		// Reserva --------------------------------------
 		Scanner sc = new Scanner(System.in);
+		Reserva[] vect = new Reserva[10];
+		
 		System.out.print("Quantos quartos serão locados? ");
 		int n = sc.nextInt();
-		Reserva[] vect = new Reserva[n];
-		int h=1;
-
-		for (int i=0; i<n; i++) {
-			System.out.println("Hospede #" + h++ +":");
+		
+		for (int i=1; i<n; i++) {
+			System.out.println("Hospede #" + i +":");
 			System.out.print("Nome: ");
 			sc.nextLine();
 			String name = sc.nextLine();
