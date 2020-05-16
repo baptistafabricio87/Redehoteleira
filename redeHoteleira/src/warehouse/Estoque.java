@@ -32,21 +32,26 @@ public class Estoque extends Almoxarifado {
 		
 		for (int i=0; i < produto.length; i++) {
 			System.out.println("Cadastro item #" + i);
-			System.out.println("Descrição do Item: ");
+			System.out.print("Descrição do Item: ");
 			sc.nextLine();
 			item = sc.nextLine();
-			System.out.println("Categoria (Alimentos, Bebidas, Etc.): ");
+			System.out.print("Categoria (Alimentos, Bebidas, Etc.): ");
 			categoria = sc.nextLine();
-			System.out.println("Quantidade: ");
+			System.out.print("Quantidade: ");
 			quantidade = sc.nextInt();
-			System.out.println("Preço: ");
+			System.out.print("Preço: ");
 			preco = sc.nextInt();
 			produto[i] = new Estoque(categoria, preco, quantidade, item);
 			System.out.println("");
 		}
 		
 		for (int i=0; i < produto.length; i++) {
-			System.out.println(produto[i]);
+			System.out.println("***** Item Cadastrado *****");
+			System.out.println("Descrição:  " + produto[i].getItem());
+			System.out.println("Categoria:  " + produto[i].getCategoria());
+			System.out.println("Quantidade: " + produto[i].getQuantidade());
+			System.out.println("Preço:      " + produto[i].getPreco());
+			System.out.println("");
 		}
 		sc.close();
 	}
