@@ -7,9 +7,8 @@ public class RecursosHumanos extends Financeiro {
 	protected String depto;
 	protected int dataAdmissao;
 
-	public RecursosHumanos(String nomeUnidade, int idUnidade, int qtdFuncionarios, double salario, String depto,
-			int dataAdmissao) {
-		super(nomeUnidade, idUnidade, qtdFuncionarios, salario);
+	public RecursosHumanos(String depto, int dataAdmissao) {
+		super();
 		this.depto = depto;
 		this.dataAdmissao = dataAdmissao;
 	}

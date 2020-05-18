@@ -21,12 +21,10 @@ public class Program {
 
 		System.out.println("Digite a opção desejada: ");
 		System.out.println("1 - Cadastrar Funcionarios |2 - Calcula Salarios |"
-				+ "3 - Reservar Quarto |4 - Cadastra Item |"
-				+ "5 - Mostra Unidades");
+				+ "3 - Reservar Quarto |4 - Cadastra Item |");
 		int opt = sc.nextInt();
 
 		switch(opt) {
-
 		case 1:
 			System.out.println("------------------------------");
 			System.out.println("Cadastro Gerente: ");
@@ -45,8 +43,9 @@ public class Program {
 			System.out.println("Digitar horas trabalhadas Mensageiro");
 			mensageiro.setHoras(sc.nextInt());
 			mensageiro.calculaSalario();
-			System.out.println(gerente.toString());
-			System.out.println(mensageiro.toString());
+			System.out.println("------------------------------");
+			gerente.toString();
+			mensageiro.toString();
 			break;
 
 		case 3:

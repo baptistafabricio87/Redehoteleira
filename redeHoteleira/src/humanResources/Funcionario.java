@@ -7,15 +7,14 @@ public class Funcionario extends RecursosHumanos{
 	// Registro do funcionario
 	protected String registro;
 	
-	public Funcionario() {
+	public Funcionario(String nome, String registro) {
 		super();
-	}
-
-	public Funcionario(String nomeUnidade, int idUnidade, int qtdFuncionarios, double salario, String depto,
-			int dataAdmissao, String nome, String registro) {
-		super(nomeUnidade, idUnidade, qtdFuncionarios, salario, depto, dataAdmissao);
 		this.nome = nome;
 		this.registro = registro;
+	}
+
+	public Funcionario() {
+		super();
 	}
 
 	public String getNome() {
