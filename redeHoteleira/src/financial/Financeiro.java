@@ -5,10 +5,12 @@ import hotelChain.RedeHotelaria;
 public class Financeiro extends RedeHotelaria {
 	
 	private double salario;
-
-	public Financeiro(String nomeUnidade, int idUnidade, int qtdFuncionarios, double salario) {
-		super(nomeUnidade, idUnidade, qtdFuncionarios);
+	protected double diaria = 120.00;
+	
+	public Financeiro(double salario, double diaria) {
+		super();
 		this.salario = salario;
+		this.diaria = diaria;
 	}
 
 	public Financeiro() {
@@ -21,6 +23,10 @@ public class Financeiro extends RedeHotelaria {
 
 	public void setSalario(double salario) {
 		this.salario = salario;
+	}
+
+	public double getDiaria() {
+		return diaria;
 	}
 	
 }
